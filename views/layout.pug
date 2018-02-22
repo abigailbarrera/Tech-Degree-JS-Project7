@@ -1,0 +1,21 @@
+extends head_content
+
+block content
+  include includes/header.pug
+  include includes/send_tweet.pug
+  .bounds.app--body
+    .app--section--header
+      .grid-33
+        .app--section--heading
+          h2 Timeline
+      .grid-33
+        .app--section--heading
+          strong #{user.friends_count}
+          h2 Following
+      .grid-33
+        .app--section--heading
+          h2 Direct Messages
+      include includes/tweets.pug
+      include includes/friends.pug
+      include includes/messages.pug
+      include includes/send_tweet.pug
