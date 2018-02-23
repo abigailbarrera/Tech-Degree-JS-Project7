@@ -18,10 +18,10 @@ app.listen(3000);
 
 /**twitter API initialization**/
 var twitterAPI = new Twit({
-  consumer_key:         'irCVAXee71gel6oNzccSHQXXj',
-  consumer_secret:      'ljmgFkc3DrQ73ODFLFejT0CPfosK1Mkhz9309zQXpMl7XeVCRT',
-  access_token:         '754198190295961601-zxpVefaGihKnFRnqgnXQIVldcFsMPUB',
-  access_token_secret:  '9pnzC2HzwTkx6rvoGX9hY7zYOo8OR6uSGlV3efoRUFn11'
+  consumer_key:         'config.consumer_key',
+  consumer_secret:      'config.consumer_secret',
+  access_token:         'config.access_key',
+  access_token_secret:  'config.acess_token_secret'
 });
 
 
