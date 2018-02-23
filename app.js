@@ -69,6 +69,7 @@ app.get('/', (req, res) => {
   const messages_sent = req.messages_sent;
   const background = req.background;
   res.render('layout', { user, timeline, friends, messages, background, moment });
+  res.redirect('/');
 });
 
 
@@ -76,7 +77,6 @@ app.post('/', (req, res) => {
   twitterAPI.post('statuses/update', { status: req.body.tweet }, function(err, data, response) {
     console.log('You tweeted!');
   });
-  res.redirect('/');
 });
 
 app.use((req, res, next) => {
